@@ -1,8 +1,12 @@
 {
-  "name": "web",
-  "version": "1.0.0",
+  "name": "moneybutton-webhook-test-web",
+  "version": "0.1.0",
+  "description": "Money Button: Webhook Test Web Application.",
   "main": "index.js",
+  "repository": "https://github.com/moneybutton/webhook-test",
+  "author": "Yours Inc.",
   "license": "MIT",
+  "private": false,
   "scripts": {
     "dev": "next -p 9000",
     "build": "next build",

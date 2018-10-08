@@ -1,8 +1,12 @@
 {
-  "name": "api",
-  "version": "1.0.0",
+  "name": "moneybutton-webhook-test-api",
+  "version": "0.1.0",
+  "description": "Money Button: Webhook Test API.",
   "main": "index.js",
+  "repository": "https://github.com/moneybutton/webhook-test",
+  "author": "Yours Inc.",
   "license": "MIT",
+  "private": false,
   "scripts": {
     "dev": "nodemon --watch src src/index.js",
     "start": "node src/index.js"
