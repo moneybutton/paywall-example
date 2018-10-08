@@ -1,0 +1,22 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next -p 9000",
+    "build": "next build",
+    "start": "next start -p 9000"
+  },
+  "dependencies": {
+    "moment": "2.22.2",
+    "next": "7.0.1",
+    "prop-types": "15.5.4",
+    "react": "16.5.2",
+    "react-dom": "16.5.2"
+  },
+  "devDependencies": {
+    "@moneybutton/react-money-button": "0.1.3",
+    "now": "11.4.6"
+  }
+}

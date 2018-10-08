@@ -1,0 +1,10 @@
+{
+  "name": "moneybutton-webhook-test",
+  "version": "0.1.0",
+  "description": "Money Button: Webhook test.",
+  "main": "index.js",
+  "repository": "https://github.com/moneybutton/webhook-test",
+  "author": "Yours Inc.",
+  "license": "MIT",
+  "private": false
+}
