@@ -1,9 +1,9 @@
 {
-  "name": "moneybutton-webhook-test-web",
+  "name": "moneybutton-paywall-example-web",
   "version": "0.1.0",
-  "description": "Money Button: Webhook Test Web Application.",
+  "description": "Money Button: Paywall Example Web Application.",
   "main": "index.js",
-  "repository": "https://github.com/moneybutton/webhook-test",
+  "repository": "https://github.com/moneybutton/paywall-example",
   "author": "Yours Inc.",
   "license": "MIT",
   "private": false,

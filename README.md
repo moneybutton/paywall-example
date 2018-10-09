@@ -1,4 +1,4 @@
-# Money Button: Webhook Test
+# Money Button: Paywall Example
 
 Example application showing how to build a paywall using [Money Button](https://moneybutton.com).
 
