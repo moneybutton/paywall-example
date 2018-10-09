@@ -1,5 +1,8 @@
 import 'react'
 
+/**
+ * 
+ */
 export default function Layout ({ children }) {
   return (
     <div>

@@ -1,11 +1,23 @@
+require('dotenv').config()
 const buildApp = require('./app')
 const Database = require('./database')
 
+/**
+ * 
+ */
+const API_PORT = process.env.API_PORT
+
+/**
+ * 
+ */
 function start () {
   const db = new Database()
   const app = buildApp(db)
-  app.listen(9001, () => {
-    console.log('Listening on port 9001.')
+  app.listen(API_PORT, err => {
+    if (err) {
+      throw err
+    }
+    console.log(`> Ready on http://localhost:${API_PORT}`)
   })
 }
 

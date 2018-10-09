@@ -3,10 +3,16 @@ const express = require('express')
 const RestError = require('./rest-error')
 const session = require('express-session')
 
-const SESSION_KEY = 'some key'
-const SESSION_SECRET = 'some secret'
-const WEBHOOK_SECRET = 'df3fb98552c447e4f003f91eb7b77b74'
+/**
+ * 
+ */
+const SESSION_KEY = process.env.SESSION_KEY
+const SESSION_SECRET = process.env.SESSION_SECRET
+const WEBHOOK_SECRET = process.env.WEBHOOK_SECRET
 
+/**
+ * 
+ */
 function buildApp (db) {
   const app = express()
 

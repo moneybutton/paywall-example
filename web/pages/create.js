@@ -1,11 +1,13 @@
-import createPost from '../util/create-post'
+import { getUser, createPost } from '../util/api'
 import ErrorDisplay from '../components/ErrorDisplay'
-import getUser from '../util/get-user'
 import Layout from '../components/Layout'
 import Loading from '../components/Loading'
 import React from 'react'
 import Router from 'next/router'
 
+/**
+ * 
+ */
 export default class PageCreate extends React.Component {
   constructor (props) {
     super(props)

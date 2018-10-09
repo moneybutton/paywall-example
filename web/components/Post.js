@@ -3,8 +3,14 @@ import moment from 'moment'
 import MoneyButton from '@moneybutton/react-money-button'
 import React from 'react'
 
-const CLIENT_IDENTIFIER = '2cd27fe6e7d10a9debf201b94695f05a'
+/**
+ * 
+ */
+const CLIENT_IDENTIFIER = process.env.CLIENT_IDENTIFIER
 
+/**
+ * 
+ */
 export default class Post extends React.Component {
   render () {
     let {

@@ -1,11 +1,13 @@
+import { getUser, updateUser } from '../util/api'
 import ErrorDisplay from '../components/ErrorDisplay'
-import getUser from '../util/get-user'
 import InfoDisplay from '../components/InfoDisplay'
 import Layout from '../components/Layout'
 import Loading from '../components/Loading'
 import React from 'react'
-import updateUser from '../util/update-user'
 
+/**
+ * 
+ */
 export default class PageAccount extends React.Component {
   constructor (props) {
     super(props)

@@ -2,8 +2,14 @@ const moment = require('moment')
 const RestError = require('./rest-error')
 const uuid = require('uuid')
 
+/**
+ * 
+ */
 const DATE_FORMAT = 'YYYY-MM-DD[T]HH:mm:ss.SSS[Z]'
 
+/**
+ * 
+ */
 class Database {
   constructor () {
     this.users = []

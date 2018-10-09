@@ -1,4 +1,7 @@
 
+/**
+ * 
+ */
 class RestError {
   constructor (status, message) {
     this.status = status

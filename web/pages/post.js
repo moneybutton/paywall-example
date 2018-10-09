@@ -1,12 +1,14 @@
+import { getUser, getPost } from '../util/api'
 import { withRouter } from 'next/router'
 import ErrorDisplay from '../components/ErrorDisplay'
-import getPost from '../util/get-post'
-import getUser from '../util/get-user'
 import Layout from '../components/Layout'
 import Loading from '../components/Loading'
 import Post from '../components/Post'
 import React from 'react'
 
+/**
+ * 
+ */
 class PagePost extends React.Component {
   constructor (props) {
     super(props)
