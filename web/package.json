@@ -19,7 +19,8 @@
     "next": "7.0.1",
     "prop-types": "15.5.4",
     "react": "16.5.2",
-    "react-dom": "16.5.2"
+    "react-dom": "16.5.2",
+    "response-time": "2.3.2"
   },
   "devDependencies": {
     "@moneybutton/react-money-button": "0.1.3",

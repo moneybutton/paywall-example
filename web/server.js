@@ -1,6 +1,7 @@
 require('dotenv').config()
 const express = require('express')
 const next = require('next')
+const responseTime = require('response-time')
 
 /**
  * 
@@ -12,14 +13,15 @@ const WEB_PORT = process.env.WEB_PORT
  * 
  */
 async function start () {
-  const app = next({ dev: NODE_ENV !== 'production' })
-  const requestHandler = app.getRequestHandler()
-  await app.prepare()
-  const server = express()
-  server.get('*', (req, res) => {
+  const nextApp = next({ dev: NODE_ENV !== 'production' })
+  const requestHandler = nextApp.getRequestHandler()
+  await nextApp.prepare()
+  const app = express()
+  app.use(responseTime())
+  app.get('*', (req, res) => {
     return requestHandler(req, res)
   })
-  server.listen(WEB_PORT, err => {
+  app.listen(WEB_PORT, err => {
     if (err) {
       throw err
     }

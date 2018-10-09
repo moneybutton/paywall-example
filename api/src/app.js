@@ -1,5 +1,6 @@
 const cors = require('cors')
 const express = require('express')
+const responseTime = require('response-time')
 const RestError = require('./rest-error')
 const session = require('express-session')
 
@@ -15,6 +16,8 @@ const WEBHOOK_SECRET = process.env.WEBHOOK_SECRET
  */
 function buildApp (db) {
   const app = express()
+
+  app.use(responseTime())
 
   app.use(express.json())
 
