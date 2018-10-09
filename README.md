@@ -4,7 +4,7 @@ Example application showing how to build a paywall using [Money Button](https://
 
 ## Demo
 
-You can try out a running demo of the app at this location: https://webhook-test-web.now.sh/
+You can try out a running demo of the app at this location: https://markdownpaywall.com
 
 ## Index
 
