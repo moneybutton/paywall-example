@@ -1,16 +1,12 @@
-import 'react'
+import React from "react"
 
-/**
- * 
- */
 export default function Layout ({ children }) {
   return (
     <div>
       <header>
         <nav>
-          <a href='/'>Home</a>
-          <a href='/create'>Create</a>
-          <a href='/account'>Account</a>
+          <a href="/">Home</a>
+          <a href="/create">Create</a>
         </nav>
       </header>
       <section>

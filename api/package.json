@@ -1,28 +1,17 @@
 {
   "name": "moneybutton-paywall-example-api",
   "version": "0.1.0",
-  "description": "Money Button: Paywall Example API.",
   "main": "index.js",
-  "repository": "https://github.com/moneybutton/paywall-example",
-  "author": "Yours Inc.",
-  "license": "MIT",
-  "private": false,
   "scripts": {
-    "dev": "nodemon --watch src src/index.js",
-    "start": "node src/index.js"
+    "start": "node index.js"
   },
   "dependencies": {
-    "body-parser": "1.18.3",
-    "cors": "2.8.4",
-    "dotenv": "6.1.0",
-    "express": "4.16.3",
-    "express-session": "1.15.6",
-    "moment": "2.22.2",
-    "response-time": "2.3.2",
-    "uuid": "3.3.2"
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "dotenv": "^6.1.0",
+    "express": "^4.16.3",
+    "express-session": "^1.17.2",
+    "uuid": "^3.3.2"
   },
-  "devDependencies": {
-    "nodemon": "1.18.4",
-    "now": "11.4.6"
-  }
+  "devDependencies": {}
 }
