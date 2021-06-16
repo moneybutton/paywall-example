@@ -1,5 +1,6 @@
 {
-  "name": "moneybutton-paywall-example-web",
+  "name": "@moneybutton/paywall-example-web",
+  "description": "Interface example for a paywall using Money Button",
   "version": "0.1.0",
   "engines": {
     "npm": "6.7.0",
@@ -8,14 +9,15 @@
   "dependencies": {
     "@moneybutton/api-client": "^0.38.6",
     "@moneybutton/react-money-button": "^0.38.6",
+    "dotenv-cli": "^4.0.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^2.1.8"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "dotenv -e ../.env -- react-scripts start",
+    "build": "dotenv -e ../.env -- react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -27,5 +29,7 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "license": "MIT",
+  "proxy": "http://localhost:3001"
 }

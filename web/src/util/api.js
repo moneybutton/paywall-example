@@ -1,10 +1,9 @@
-const API_URL = process.env.REACT_APP_API_URL
 
 const request = async (url, method, body) => {
   const attributes = {
     method,
     headers: {
-      "AuthoriZAtion": localStorage.getItem("session"),
+      "Authorization": localStorage.getItem("session"),
       "Content-Type": "application/json"
     }
   }
@@ -23,20 +22,24 @@ const request = async (url, method, body) => {
   }
 }
 
-export async function session (userId) {
-  const { sessionId } = await request(`${API_URL}/session`, "POST", { userId })
+export async function session () {
+  const { sessionId } = await request(`/session`, "POST")
 
   localStorage.setItem("session", sessionId);
 }
 
+export function getSessionId () {
+  return localStorage.getItem("session")
+}
+
 export function createPost (post) {
-  return request(`${API_URL}/posts`, "POST", post)
+  return request(`/posts`, "POST", post)
 }
 
 export async function getPosts () {
-  return request(`${API_URL}/posts`, "GET")
+  return request(`/posts`, "GET")
 }
 
 export async function createPurchase (purchase) {
-  return request(`${API_URL}/purchases`, "POST", purchase)
+  return request(`/purchases`, "POST", purchase)
 }

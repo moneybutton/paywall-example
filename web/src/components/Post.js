@@ -11,7 +11,6 @@ export default function Post ({ post }) {
 
     setPaymentSent(true)
   }
-  const user = JSON.parse(localStorage.getItem("user"))
 
   return (
     <div className="post">
